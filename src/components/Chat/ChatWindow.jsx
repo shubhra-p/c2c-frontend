@@ -11,6 +11,8 @@
    console.log(session);
 
    return (
+   )
+ }
 -    <div className="flex flex-col h-[78vh]">
 +    <div className="flex flex-col h-[78vh] animate-fade-in">
        <ChatHeader session={session} />

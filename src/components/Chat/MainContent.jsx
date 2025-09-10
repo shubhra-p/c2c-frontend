@@ -6,6 +6,8 @@
  export default function MainContent() {
    const { activeSessionId } = useSessionState();
    return (
+   )
+ }
 -    <main className="min-h-[85vh] bg-white rounded-lg shadow p-4">
 +    <main className="min-h-[85vh] bg-gradient-to-b from-gray-800/40 to-gray-900/40 backdrop-blur-xl border border-gray-700/30 rounded-2xl shadow-2xl p-6 animate-slide-in-right">
        {activeSessionId ? <ChatWindow sessionId={activeSessionId} /> : <Welcome />}
@@ -15,6 +17,8 @@
 
  function Welcome() {
    return (
+   )
+}
 -    <div className="h-full flex flex-col items-center justify-center text-center text-slate-600">
 -      <h1 className="text-2xl font-semibold mb-2">Welcome to the Chat App</h1>
 -      <p className="max-w-lg">Create a new chat from a GitHub repo or open an existing session from the left. The assistant will analyze the repository and answer questions.</p>
